@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Inter';
+  font-weight: normal;
+  src: local('Inter-Medium'), url('/fonts/Inter-Medium.otf')
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: bold;
+  src: local('Inter-Bold'), url('/fonts/Inter-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: bolder;
+  src: local('Inter-ExtraBold'), url('/fonts/Inter-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: lighter;
+  src: local('Inter-Light'), url('/fonts/Inter-Light.otf');
+}
+
+:root{
+  font-size: 16px;
+  font-family: Inter;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100dvh;
+  width: 100%;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.upper{
+  text-transform: uppercase;
+}
