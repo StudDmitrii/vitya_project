@@ -4,12 +4,10 @@
   --telegram_img: url('/icons/tg_icon.png');
   --whatsapp_img: url('/icons/whatsapp_icon.png');
 
-  width: 100%;
-  height: 100%;
+  --blue-color: #200F6D;
+  --white2: #f9fafc;
 
   display: flex;
-  
-  justify-content: stretch;
   flex-direction: column;
 }
 
@@ -18,14 +16,10 @@ header{
   position: fixed;
   width: 100%;
   padding: 15px 20px;
-  background-color: #200F6D;
+  background-color: var(--blue-color);
 
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
 }
 
 nav{
@@ -104,23 +98,60 @@ footer {
 
 /* main */
 main{
-  padding: 100px 0;
-  min-height: 100px;
-  flex-grow: 1;
+  padding-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main > section {
+  display: flex;
+  justify-content: center;
+}
+
+main > section > div{
+  display: flex;
+  padding: 0 40px;
+  max-width: clamp(500px, 100%, 1100px);
 }
 
 .intro{
-  display: flex;
-  flex-direction: row;
-  justify-items: stretch;
+  background-color: var(--white2);
 }
 
 .intro .left{
+  padding-top: 80px;
+  min-width: 50%;
+
   display: flex;
   flex-direction: column;
-  justify-items: start;
+  align-items: start;
+}
+
+.intro .left h1{
+  font-size: 2rem;
+}
+
+.intro .left h1 span{
+  font-weight: 900;
 }
 
 .intro .right img{
-  width: 500px;
+  height: 600px;
+}
+
+.intro .intro_words{
+  margin-top: 40px;
+  border-left: 3px solid var(--blue-color);
+  padding: 0 0 0 20px;
+}
+
+.intro button{
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin-top: 40px;
+  background-color: var(--blue-color);
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
 }
