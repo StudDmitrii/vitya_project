@@ -1,0 +1,44 @@
+.slider{
+    --slider-back-color: gray;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.slider .container{
+
+}
+
+.slider-controller{
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-arrows{
+    display: flex;
+}
+
+.left-arrow, .right-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--slider-back-color);
+    background-image: url('/icons/arrow.svg');
+    background-size: cover;
+}
+
+.right-arrow{
+   transform: scaleX(-1);
+}
+
+.slider-points{
+    display: flex;
+}
+
+.slider-point{
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+    background-color: var(--slider-back-color);
+}

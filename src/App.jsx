@@ -1,5 +1,6 @@
 import './App.css'
 import Logo from './components/Logo'
+import Slider from './components/Slider'
 import ai_img from '/imgs/modern-residential-district-with-green-roof-balcony-generated-by-ai.jpg'
 
 function App() {
@@ -42,7 +43,9 @@ function App() {
           </div>
         </section>
         
-        <section className="portfolio"></section>
+        <section className="portfolio">
+          <Slider count_in_row={3}><div></div></Slider>
+        </section>
         <section className="services"></section>
         <section className="questions"></section>
       </main>
