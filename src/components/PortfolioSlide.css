@@ -1,0 +1,24 @@
+.portfolio-slide{
+    background-color: var(--white2);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.portfolio-slide img{
+    border-radius: 20px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.portfolio-slide-title{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.portfolio-slide-date{
+    color: var(--blue-color);
+    font-size: 0.8rem;
+}

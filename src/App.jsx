@@ -1,9 +1,11 @@
 import './App.css'
 import Logo from './components/Logo'
 import Slider from './components/Slider'
+import PortfolioSlide from './components/PortfolioSlide'
 import ai_img from '/imgs/modern-residential-district-with-green-roof-balcony-generated-by-ai.jpg'
+import portfolio_slides from './data/portfolio'
 
-function App() {
+export default function App() {
   return (
     <>
       <header>
@@ -44,7 +46,9 @@ function App() {
         </section>
         
         <section className="portfolio">
-          <Slider count_in_row={3}><div></div></Slider>
+          <Slider count_in_row={3}>
+            {portfolio_slides.map((el,index)=><PortfolioSlide key={index} img={el.img} title={el.title} date={el.date}/>)}
+          </Slider>
         </section>
         <section className="services"></section>
         <section className="questions"></section>
@@ -85,5 +89,3 @@ function App() {
     </>
   )
 }
-
-export default App
